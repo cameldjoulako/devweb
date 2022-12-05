@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex-container {
+  display: flex;
+  background-color: red;
+  /* flex-wrap: wrap; */
+  /*flex-direction: row-reverse;*/
+  flex-flow: column wrap;
+}
+
+.flex-item {
+  border: 1px solid white;
+  background-color: orange;
+}
+
+/* Recapitulatif 
+display: flex
+flex-wrap: wrap nowrap wrap-reverse
+flex-direction : row row-reverse, column, column-reverse
+
+rarcoucir: direction : wrap 
+flex-flow : direction flex-wrap*/
