@@ -1,6 +1,6 @@
 .flex-container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-end;
   width: 60vw;
@@ -15,11 +15,15 @@
 }
 
 .big {
-  flex-grow: 2;
+  padding: 8px 20px;
+  height: 25px;
+  align-self: stretch;
 }
 
 .bigger {
-  flex-grow: 4;
+  padding: 32px 24px;
+  height: 50px;
+  align-self: center;
 }
 
 /*  

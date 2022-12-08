@@ -15,11 +15,16 @@
 }
 
 .big {
-  flex-grow: 2;
+  padding: 8px 20px;
+  height: 25px;
+  flex-basis: 210px;
 }
 
 .bigger {
-  flex-grow: 4;
+  padding: 32px 24px;
+  height: 50px;
+  flex-basis: 210px;
+  min-width: 210px;
 }
 
 /*  
