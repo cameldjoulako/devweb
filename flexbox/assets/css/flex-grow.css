@@ -12,14 +12,19 @@
   border: 1px solid white;
   background-color: orange;
   padding: 5px 15px;
-  flex-shrink: 3;
-  flex: 0 2 auto;
 }
 
 .big {
-  flex: 3 1 auto;
+  flex-grow: 2;
 }
 
 .bigger {
-  flex: 4 1 40%;
+  flex-grow: 4;
 }
+
+/*  
+   flex container 
+   alignement suivant l'axe principale
+   alignement suivant l'axe secondaire
+
+*/

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+  <title>Les Pseudo-elements</title>
+
+  <style type="text/css">
+    /* Syntaxe des pseudo-element
+
+    element::pseudoelement
+
+    E::first-letter
+    E::first-line
+    E::before
+    E::after
+    */
+
+
+    p::first-letter {
+      font-size: 25px;  
+      color: whitesmoke;
+      text-shadow: 0px 0px 2px black, 1px 1px 2px black ;
+      letter-spacing: 2px;
+    }
+
+
+    p::first-line {
+      font-size: 25px;  
+      color: whitesmoke;
+      text-shadow: 0px 0px 2px black, 1px 1px 2px black ;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      color: gray;
+    }
+
+    h1::before {
+      content: '\2660';
+      margin-right: 5px;
+      color: blue;
+    }
+
+    h1::after {
+      content: '\2666';
+      margin-left: 5px;
+      color: red;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Introduction au Développement web</h1>
+
+ <p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam incidunt minima quo atque ullam aspernatur quidem illum! Maiores quibusdam qui cupiditate minus, ex placeat excepturi maxime aut aperiam quis!
+ </p>
+ 
+
+</body>
+
+</html>

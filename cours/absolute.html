@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <title>Absolute</title>
+
+    <style type="text/css">
+      div {
+        padding: 3rem;
+        margin: 20px;
+        border: 2px black solid;
+        position: absolute;
+        width: 30%;
+        height: 30%;
+
+      }
+
+      .topleft{
+        background: honeydew;
+        top:0;
+        left:0;
+        margin-right: 2rem;
+      
+      }
+
+      .topright{
+        background: lime;
+        top:0;
+        right: 0
+
+      }
+
+      .bottomleft{
+        background: red;
+        bottom: 0;
+        left: 0
+
+      }
+
+      .bottomright{
+        bottom: 0;
+        right: 0;
+      }
+
+      span {
+        font-size: 2em; 
+        font-weight: 900;
+      }
+     
+        
+    </style>
+  </head>
+  <body>
+
+    <div class="topleft">
+      <span>1</span>
+    </div>
+    <div class="topright">
+      <span>2</span>
+    </div>
+    <div class="bottomleft" >
+      <span>3</span>
+    </div>
+    <div class="bottomright">
+      <span>4</span>
+    </div>
+     
+  </body>
+</html>

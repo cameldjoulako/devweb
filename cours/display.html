@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <title>Display</title>
+
+    <style type="text/css">
+
+      span {
+        border: 2px solid red;
+        margin: 5px;
+      }
+
+      .block {
+        display: block;
+      }
+
+      .one {
+        background: honeydew;
+      }
+      .two {
+        background: lime;
+      }
+      .three {
+        background: skyblue;
+      }
+
+     /* 
+
+     les valeurs valeurs possible de la propriété display:
+      block
+      inline
+      inline-block 
+      table-cell
+      list-item
+      none
+
+      flex
+      grid
+
+
+      */
+      .hidden {
+        display: none
+      }
+
+       .btn {
+        display: block;
+        margin-top:3rem;        
+        color: rgb(14, 12, 12);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid rgb(13, 13, 136);
+        border-radius: 100px;
+       }
+
+       .btn-lg {
+        font-size: 5.5em;
+       }
+
+       .btn-md{
+        font-size: 1.5em;
+       }
+
+
+       .btn-primary {
+        background-color: rgb(32, 32, 196);
+        color: rgb(247, 240, 240);
+       }
+
+       .btn-sucess {
+          background-color: rgb(8, 123, 46);
+          color: rgb(240, 229, 229);
+       }
+
+       .btn-danger {
+        background-color: rgb(212, 11, 11);
+        color: rgb(250, 247, 247);
+       }
+
+
+      
+     
+        
+    </style>
+  </head>
+  <body>
+    <span class="block one">Block text</span>
+    <span class="block two hidden">Block text</span>
+    <span class="block three">Block text</span>
+    <span class="one">Inline text </span>
+    <span class="two">Inline text</span>
+    <span class="three">Inline text</span>
+
+    <button class="btn btn-sucess " type="submit">Envoyer</button>
+     
+  </body>
+</html>
