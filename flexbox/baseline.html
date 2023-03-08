@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Example</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-qzDm+NMQudy+Ww5mu39B5PVaB5vLEaCgJ9BXQqX+oqzAWpC3dO9RqltCyp5Qd2Q/"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        display: flex;
+        align-items: baseline;
+        padding: 20px;
+        background-color: #f1f1f1;
+      }
+
+      .box {
+        background-color: #2196f3;
+        color: #fff;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+
+      .icon {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+		CSS FLEXBOX ALIGNEMENTS VERTICAUX
+
+		En Flexbox, la propriété align-items est utilisée pour aligner verticalement les éléments enfants dans un conteneur flexible.
+		Lorsque la valeur de align-items est définie sur baseline, les éléments sont alignés sur leur ligne de base commune.
+
+		La ligne de base commune est une ligne imaginaire sur laquelle le texte repose.
+		L'alignement sur la ligne de base commune est particulièrement utile pour aligner des éléments avec du texte,
+		tels que des images ou des icônes. En alignant les éléments sur la ligne de base commune,
+		ils seront alignés verticalement avec le texte environnant, créant ainsi un alignement visuel agréable.
+
+		Il convient de noter que la ligne de base commune dépend de la police et de la taille de la police utilisées pour le texte.
+		Par conséquent, l'alignement sur la ligne de base commune peut varier en fonction du texte et des polices utilisées sur votre site.
+	-->
+
+    <div class="container">
+      <div class="box">Box 1</div>
+      <i class="far fa-twitter icon"></i>
+      <div class="box">Box 2</div>
+      <i class="far fa-facebook icon"></i>
+      <div class="box">Box 3</div>
+      <i class="far fa-instagram icon"></i>
+      <div class="box">Box 4</div>
+    </div>
+  </body>
+</html>
