@@ -1,0 +1,72 @@
+.row > div {
+  height: 250px;
+  background-color: #f00;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  float: left;
+  margin: 5px;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.row .col-6 {
+  width: calc(600px - 10px);
+}
+
+.row .col-5 {
+  width: calc(500px - 10px);
+}
+
+.row .col-4 {
+  width: calc(400px - 10px);
+}
+
+.row .col-3 {
+  width: calc(300px - 10px);
+}
+
+.row .col-2 {
+  width: calc(200px - 10px);
+}
+
+.row .col-1 {
+  width: calc(100px - 10px);
+}
+
+.row .push-5 {
+  margin-left: 505px;
+}
+
+.row .push-4 {
+  margin-left: 405px;
+}
+
+.row .push-3 {
+  margin-left: 305px;
+}
+
+.row .push-2 {
+  margin-left: 205px;
+}
+
+.row .push-1 {
+  margin-left: 105px;
+}
+
+.row .pull-5 {
+  margin-right: 505px;
+}
+.row .pull-4 {
+  margin-right: 405px;
+}
+.row .pull-3 {
+  margin-right: 305px;
+}
+.row .pull-2 {
+  margin-right: 205px;
+}
+.row .pull-1 {
+  margin-right: 105px;
+}
