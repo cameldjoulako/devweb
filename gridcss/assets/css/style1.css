@@ -1,26 +1,14 @@
 .row > div {
-  min-height: 250px;
+  height: 250px;
   background-color: #f00;
   box-sizing: border-box;
-  /* border: 1px solid #ddd; */
-  outline: 1px solid #ddd;
+  border: 1px solid #ddd;
+  float: left;
   margin: 5px;
 }
 
 .row {
   overflow: hidden;
-  margin: 5px 0;
-}
-
-.row .has-gutter {
-  margin: 0 5px;
-}
-
-.row > .cell {
-  min-height: 120px;
-  background-color: blue;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
 }
 
 .row .col-6 {
@@ -81,16 +69,4 @@
 }
 .row .pull-1 {
   margin-right: 105px;
-}
-
-.row .ml0 {
-  margin-left: 0;
-}
-
-.row .mr0 {
-  margin-right: 0;
-}
-
-[class*="col-"] {
-  float: left;
 }
