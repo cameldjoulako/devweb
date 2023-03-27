@@ -23,6 +23,10 @@
   border: 1px solid #ddd;
 }
 
+.row > .height-double {
+  min-height: 240px;
+}
+
 .row .col-6 {
   width: calc(600px - 10px);
 }

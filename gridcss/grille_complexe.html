@@ -8,6 +8,45 @@
     <title>Grid CSS</title>
   </head>
   <body>
-    <div class="grille"></div>
+    <div class="grille">
+      <!-- 1ere rangée -->
+      <div class="row">
+        <div class="col-4 cell has-gutter">
+          <h3>boite 1</h3>
+        </div>
+        <div class="col-2 cell has-gutter">
+          <h3>boite 2</h3>
+        </div>
+      </div>
+      <!-- 2e rangée -->
+      <div class="row">
+        <div class="col-4 has-gutter">
+          <!-- premiere boite de la rangée principale -->
+          <div class="row">
+            <!-- première sous rangée qui comporte deux sous rangés -->
+            <div class="col-1 cell has-gutter ml0 height-double">
+              <h3>boîte 3.1.1</h3>
+              <p>Cette boîte est sur deux rangées</p>
+            </div>
+            <div class="col-3 has-gutter mr0"></div>
+          </div>
+          <div class="row">
+            <!-- deuxieme sous rangée -->
+            <div class="col-1 cell has-gutter ml0">Boite 3.2.1</div>
+            <div class="col-2 cell has-gutter">Boite 3.2.2</div>
+            <div class="col-1 cell has-gutter mr0">Boite 3.2.3</div>
+          </div>
+          <div class="row">
+            <!-- troisième sous rangée -->
+            <div class="col-4 cell has-gutter ml0">
+              <h3>boite 3.3</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 has-gutter">
+          <h3>boite 4</h3>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
