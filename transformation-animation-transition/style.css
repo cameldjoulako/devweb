@@ -1,4 +1,5 @@
 .parent {
+  margin: 5rem;
   width: 400px;
   height: 400px;
   background-color: #ededff;
@@ -6,7 +7,52 @@
 }
 
 .translate {
-  /* transform: translate(50px, 60px); */
+  transform: translate(50px, 60px);
+  width: 250px;
+  height: 250px;
+  background-color: #ffeded;
+  border: 1px solid #420021;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  width: 250px;
+  height: 250px;
+  background-color: #ffeded;
+  border: 1px solid #420021;
+}
+
+.scale {
+  transform: scale(2, 3);
+  width: 250px;
+  height: 250px;
+  background-color: #ffeded;
+  border: 1px solid #420021;
+}
+
+.skew {
+  transform: skew(45deg, 15deg);
+  width: 250px;
+  height: 250px;
+  background-color: #ffeded;
+  border: 1px solid #420021;
+}
+.transform {
+  transform: translate(50px, 60px) rotate(90deg) scale(2, 3) skew(45deg, 15deg);
+  width: 250px;
+  height: 250px;
+  background-color: #ffeded;
+  border: 1px solid #420021;
+}
+
+/* .transform-origin {
+  transform: rotate(30deg);
+  transform-origin: x-axis y-axis z-axis;
+} */
+
+.rotate-origin {
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
   width: 250px;
   height: 250px;
   background-color: #ffeded;
