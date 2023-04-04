@@ -1,0 +1,30 @@
+.parent {
+  margin: 5rem;
+  width: 400px;
+  height: 400px;
+  background-color: #ededff;
+  border: 1px solid #210042;
+}
+
+.bloc {
+  /* transform: translate(50px, 60px); */
+  width: 250px;
+  height: 250px;
+  background-color: #ffeded;
+  border: 1px solid #420021;
+}
+
+@keyframes myfirst {
+  from {
+    background: red;
+    transform: rotate(60deg);
+  }
+  to {
+    background: yellow;
+    transform: rotate(30deg);
+  }
+}
+
+.animation {
+  animation: myfirst 5s;
+}

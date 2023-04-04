@@ -52,7 +52,7 @@
 
 .rotate-origin {
   transform: rotate(45deg);
-  transform-origin: 50% 50%;
+  transform-origin: top right;
   width: 250px;
   height: 250px;
   background-color: #ffeded;

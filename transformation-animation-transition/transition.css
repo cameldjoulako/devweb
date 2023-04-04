@@ -1,0 +1,47 @@
+/*   Transition simple 
+
+.transtion-width {
+  width: 200px;
+  height: 500px;
+  transition: width 2s;
+  background-color: blue;
+  border: 1px solid blue;
+}
+
+.transtion-width:hover {
+  width: 600px;
+}
+
+Transitions multiple 
+.transition-multiple {
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.transition {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier()
+    ease linear ease-in ease-out ease-in-out ;
+  transition-delay: 5s;
+}
+
+ */
+
+.transition {
+  /* transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  
+  
+ */
+  width: 200px;
+  height: 500px;
+  transition: width 3s linear 1s;
+  background-color: blue;
+  border: 1px solid blue;
+}
+
+.transition:hover {
+  width: 600px;
+}
