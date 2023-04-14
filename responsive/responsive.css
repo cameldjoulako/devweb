@@ -1,0 +1,24 @@
+#wrapper {
+  max-width: 1220;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: blue;
+}
+
+article {
+  margin: 2em 0;
+}
+
+h1 {
+  margin: 1em 0;
+}
+
+@media screen and (min-width: 720px) {
+  #wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  article {
+    flex: 1 2 300px;
+  }
+}

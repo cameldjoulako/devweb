@@ -1,0 +1,10 @@
+/* .col-5 {
+  width: calc(((100% / 14) * 5) - 2%);
+}
+ */
+
+@media screen {
+  body {
+    background-color: red;
+  }
+}

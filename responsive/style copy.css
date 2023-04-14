@@ -1,0 +1,101 @@
+/* .col-5 {
+  width: calc(((100% / 14) * 5) - 2%);
+}
+ */
+
+/* @media screen {
+  body {
+    background-color: red;
+  }
+} */
+
+/* Les types de medias
+all (tous les ecrans
+aural et spech (vocal
+handheld (mobile
+print (imprimantes
+screen
+
+and only not
+
+cibler les ecréans qui font moins de 450px 
+
+*/
+/* 
+@media screen and (min-width: 450px) {
+  .main {
+    max-width: 750px;
+    padding: 15px;
+  }
+} */
+
+/*
+body {
+  background-color: #ddd;
+}
+
+@media screen and (min-width: 355px) {
+  body {
+    background-color: #ff0;
+  }
+}
+
+@media screen and (min-width: 555px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 755px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 955px) {
+  body {
+    background-color: red;
+  }
+}*/
+
+/* @media screen and (max-width: 1005px) {
+  body {
+    background-color: skyblue;
+  }
+}
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+#wrapper {
+  max-width: 1220;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: blue;
+}
+
+article {
+  margin: 2em 0;
+}
+
+h1 {
+  margin: 1em 0;
+}
+
+@media screen and (min-width: 720px) {
+  #wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  article {
+    flex: 1 2 300px;
+  }
+}
