@@ -1,0 +1,38 @@
+.conteneur {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  gap: 10px;
+}
+
+.box {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+/* fr : Fraction units */
+
+.une {
+  grid-column-start: 1;
+  /* grid-column-end: 4; */
+  grid-column: 1 / 4; /*  (syntaxe simplifié de grid-column-start et grid-column-end) */
+}
+
+.deux {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 1 / 2;
+}
+
+.cinq {
+  grid-column: 2 / 4;
+  /* grid-row: 3 / 4; */
+}
+.six {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+.huit {
+  grid-column: 1 / 4;
+}
