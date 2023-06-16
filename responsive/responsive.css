@@ -1,24 +1,57 @@
+/* Style generaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
 #wrapper {
-  max-width: 1220;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 5%;
-  background-color: blue;
+  background-color: #12dd33;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
-article {
-  margin: 2em 0;
-}
-
-h1 {
+.col {
+  border: 1px solid #f00;
   margin: 1em 0;
+  padding: 0.625rem;
 }
 
-@media screen and (min-width: 720px) {
-  #wrapper {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  article {
-    flex: 1 2 300px;
-  }
+.col-aside {
+  border: 1px solid #f00;
+  margin: 1em 0;
+  padding: 0.625rem;
+}
+
+.has-gutter {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+/* Grille de 6 unité pour le mobile par exemple */
+.xs-col-1 {
+  width: calc(((100% / 6) * 1) - 2%);
+}
+.xs-col-2 {
+  width: calc(((100% / 6) * 2) - 2%);
+}
+.xs-col-3 {
+  width: calc(((100% / 6) * 3) - 2%);
+}
+.xs-col-4 {
+  width: calc(((100% / 6) * 4) - 2%);
+}
+.xs-col-5 {
+  width: calc(((100% / 6) * 5) - 2%);
+}
+.xs-col-1 {
+  width: calc(((100% / 6) * 6) - 2%);
 }
