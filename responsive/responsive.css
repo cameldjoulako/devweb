@@ -9,11 +9,16 @@ html {
   font-size: 100%;
 }
 
-#wrapper {
-  max-width: 1220px;
+body {
+  background: url(../img/fond.avif) top center no-repeat fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 100%;
   margin: 0 auto;
   padding: 5%;
-  background-color: #12dd33;
+  /* background-color: #12dd33; */
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -52,6 +57,71 @@ html {
 .xs-col-5 {
   width: calc(((100% / 6) * 5) - 2%);
 }
-.xs-col-1 {
+.xs-col-6 {
   width: calc(((100% / 6) * 6) - 2%);
+}
+
+/* ls: large screen - xs: extra small screen */
+@media screen and (min-width: 720px) {
+  .ls-col-1 {
+    width: calc(((100% / 14) * 1) - 2%);
+  }
+  .ls-col-2 {
+    width: calc(((100% / 14) * 2) - 2%);
+  }
+  .ls-col-3 {
+    width: calc(((100% / 14) * 3) - 2%);
+  }
+  .ls-col-4 {
+    width: calc(((100% / 14) * 4) - 2%);
+  }
+  .ls-col-5 {
+    width: calc(((100% / 14) * 5) - 2%);
+  }
+  .ls-col-6 {
+    width: calc(((100% / 14) * 6) - 2%);
+  }
+  .ls-col-7 {
+    width: calc(((100% / 14) * 7) - 2%);
+  }
+  .ls-col-8 {
+    width: calc(((100% / 14) * 8) - 2%);
+  }
+  .ls-col-9 {
+    width: calc(((100% / 14) * 9) - 2%);
+  }
+  .ls-col-10 {
+    width: calc(((100% / 14) * 10) - 2%);
+  }
+  .ls-col-11 {
+    width: calc(((100% / 14) * 11) - 2%);
+  }
+  .ls-col-12 {
+    width: calc(((100% / 14) * 12) - 2%);
+  }
+  .ls-col-13 {
+    width: calc(((100% / 14) * 13) - 2%);
+  }
+  .ls-col-14 {
+    width: calc(((100% / 14) * 14) - 2%);
+  }
+}
+
+.main img,
+img,
+.footer .derniers-articles {
+  max-width: 100%;
+}
+
+.fl-1 {
+  float: left;
+}
+
+.mp {
+  margin: 0 0.5em 0.5rem 0;
+}
+
+.w40 {
+  width: 40%;
+  min-width: 180px;
 }
