@@ -8,94 +8,220 @@
   </head>
   <body>
     <script type="text/JavaScript">
-      //alert('BONJOUR LE MONDE');
+         //alert('BONJOUR LE MONDE');
 
-      //commentaire sur 1 ligne
+         //commentaire sur 1 ligne
 
-      /*
-      comment on
-      multiple line
-      */
+         /*
+         comment on
+         multiple line
+         */
 
-      //console.log("JavaScript est le meilleur Langage");
-
-
-      //ajout d'un texte dans la page
-      //document.write("Les base de JavaScript");
-
-      //message boite dialogue
-      //window.alert("JavaScript est genial");
+         //console.log("JavaScript est le meilleur Langage");
 
 
-      //les variables
-      /* var age = 0;
-      let age = 0;
-      const a = 0; */
+         //ajout d'un texte dans la page
+         //document.write("Les base de JavaScript");
+
+         //message boite dialogue
+         //window.alert("JavaScript est genial");
 
 
-      //recuperer une valeur
-      //alert("votre age");
-
-      //var age = prompt("Votre age");
-      //document.write(age);
-
-        /*var monAge = 0;
-
-        var name = "Camel";
+         //les variables
+         /* var age = 0;
+         let age = 0;
+         const a = 0; */
 
 
-        //concatenation
+         //recuperer une valeur
+         //alert("votre age");
 
-        var max_age = 18;
-        var message = "non autorisé au moins de " + max_age + " ans";
-        var note = 16.215;
+         //var age = prompt("Votre age");
+         //document.write(age);
 
-        //document.write(message);
-        /* document.write(typeof max_age); // number
-        document.write(typeof message);   //string
-        document.write(typeof note); */   //number
+           /*var monAge = 0;
 
-        /*var number = "11"; // string
-
-        var parsed = parseInt(number); //
-        var parsedFloat = parseFloat(number); //
-
-        document.write(parsed + 1); //12
-
-        document.write(number + 1);  //111
+           var name = "Camel";
 
 
-        var salaire = 25000;
+           //concatenation
 
-        salaire = salaire + 2800;
+           var max_age = 18;
+           var message = "non autorisé au moins de " + max_age + " ans";
+           var note = 16.215;
 
-        salaire = salaire - 2800;
+           //document.write(message);
+           /* document.write(typeof max_age); // number
+           document.write(typeof message);   //string
+           document.write(typeof note); */   //number
 
-        salaire = salaire * 2800;
+           /*var number = "11"; // string
 
-        salaire = salaire / 2800;
+           var parsed = parseInt(number); //
+           var parsedFloat = parseFloat(number); //
 
-        salaire = salaire % 2800;
+           document.write(parsed + 1); //12
 
-        //les comparaisons
-        salaire == 2800 // true
-        salaire == "2800" // true
-
-        salaire === 2800 // true
-        salaire === "2800" // false
-
-        salaire !=2800
-        salaire !==2800
-
-        < =
-        > =
-
-        age == 18 && salaire > 2800 //
-        age == 18 || salaire > 2800  //
-      */
+           document.write(number + 1);  //111
 
 
-      //structure conditionnnelle
+           var salaire = 25000;
+
+           salaire = salaire + 2800;
+
+           salaire = salaire - 2800;
+
+           salaire = salaire * 2800;
+
+           salaire = salaire / 2800;
+
+           salaire = salaire % 2800;
+
+           //les comparaisons
+           salaire == 2800 // true
+           salaire == "2800" // true
+
+           salaire === 2800 // true
+           salaire === "2800" // false
+
+           salaire !=2800
+           salaire !==2800
+
+           < =
+           > =
+
+           age == 18 && salaire > 2800 //
+           age == 18 || salaire > 2800  //
+         */
+
+
+         //structure conditionnnelle
+
+         /*
+         if(expression1) {
+           //bloc de code executé si expression1 est evalué a true
+         } else if (expression2) {
+           //bloc
+         } else {
+           //bloc
+         }
+
+
+         //cas de test: switch
+
+         switch (myVar) {
+           case "cas1":
+             //myVar === cas1
+             break;
+
+           case "cas2":
+           //
+           break;
+
+           default:
+             //
+             break;
+         }
+
+         */
+
+         /* //Les : [] Array
+
+         var langage1 = new Array("Java", "JavaScript", "Python");
+         var langage2 = ["PHP", "GO"];
+         var langage2 = [];
+
+         var java = langage1[0];
+         //console.log(java);
+
+         //ajout au tableau
+         langage2.push(java);
+
+         console.log(langage2); */
+
+         //Les boucles
+      /*    var solde = 150;
+         var nbCompte = 40;
+         var frais = 15;
+
+         while (nbCompte > 0) {
+           solde -= frais;
+
+           nbCompte--;
+         }
+
+         do {
+           solde -= frais;
+
+           nbCompte--;
+         } while(nbCompte > 0) */
+
+         /* var client;
+         for (client = 0; client<100; client += 1) {
+           document.write("client numéro : "+ client + " ");
+         }
+
+         //EXO
+         nombreAcherche
+         nombreEtappe = 7 */
+
+          //les fonction
+
+         /* function nomFonction(param1, param2, ...) {
+          //
+         }
+
+         nomFonction();
+         nomFonction(arguments); */
+
+         /* function howOld(year) {
+
+          let currentYear = new Date().getFullYear();
+
+          return currentYear - year;
+
+         }
+
+         var age = howOld(2000);
+
+
+         console.log("Bryan a " + age + " ans"); */
+
+         /* var myVar = "Je suis Globale\n";
+
+         function writeGlobal(){
+          console.log(myVar);
+         }
+
+         function setGlobal_writeLocal(newValue) {
+          myVar = newValue;
+
+          var myVar = "Je suis Locale\n";
+          console.log(myVar);
+         }
+
+
+         writeGlobal();
+         setGlobal_writeLocal("Je suis toujours globale\n");
+         writeGlobal();
+
+         //quel affichache: globe 2 locale globale */
+
+         //Function expression
+
+         var soldes = [2000, 5000, 9000];
+
+         var displaySquare = function(solde) {
+            console.log(solde * solde);
+         }
+
+
+         soldes.forEach(displaySquare);
+
+         //same
+         soldes.forEach(solde => {
+          console.log(solde * solde);
+         });
     </script>
   </body>
 </html>
