@@ -1,0 +1,24 @@
+.active {
+  color: green;
+  border: 1px solid green;
+  border-radius: 50px;
+}
+
+.desactive {
+  background-color: blue;
+  border: 5px solid blue;
+  color: white;
+  height: 150px;
+  width: 500px;
+  border-radius: 100px;
+}
+
+.red {
+  background-color: red;
+  height: 100px;
+  width: 200px;
+}
+
+.border {
+  border: 2px dashed black;
+}
