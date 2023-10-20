@@ -141,6 +141,47 @@ div.style.textTransform = "uppercase";
 div.style.width = "250px";
 div.style.fontWeight = "800";
  */
+/* revision
+var monElement = document.getElementById('monElement');
+
+console.log(monElement.textContent);
+
+monElement.textContent = 'Nouveau contenu'
+
+var nouveauTexte = document.createTextNode('Texte Nouveau');
+
+monElement.appendChild(nouveauTexte);
+
+let  parent = document.getElementById('monElement');
+
+let enfant1 = document.createElement('div');
+let enfant2 = document.createElement('span');
+
+parent.append(enfant1, enfant2, 'Texte ajouté');
+ */
+
+
+//-----------------------------
+/*LES EVENEMENTS EN JAVASCRIPT*/
+
+let button = document.querySelector("#myButton");
+
+button.addEventListener("", function(){
+    alert("click sur le boutton !");
+});
+
+
+/**
+ * 
+ * click
+ * load
+ * unload
+ * 
+ * 
+ */
+
+
+
 
 
 
