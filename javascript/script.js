@@ -173,12 +173,70 @@ button.addEventListener("", function(){
 
 /**
  * 
- * click
- * load
- * unload
+ * onchange
+ * onsubmit
+ * onreset
+ * onselect
+ * onblur
+ * onfocus
  * 
+ * onkeydown
+ * onkeypress 
+ * onkeyup
+ * 
+ * onclick
+ * ondbclick
+ * onmousedown
+ * onmousemove
+ * onmouseout
+ * onmouseover
+ * onmouseup
  * 
  */
+
+
+/* function validerLeFormulaire() {
+    var nom = document.forms["monFormulaire"]["nom"].value;
+
+    if(nom == null || nom == "") {
+        alert("Le nom doit etre spécifié");
+        return false;
+    }
+
+}  */
+
+
+//----------------
+/* l'objet Event */
+
+//un objet en javascript:
+//littéral d'objet
+/* let personne = {
+    nom: 'Lurant',
+    age: 30,
+    adresse: {
+        rue: '123 avenue principale',
+        ville: 'Paris'
+
+    },
+};
+
+
+//notation poité
+let person =  {};
+person.nom = "camel";
+person.age = 40;
+ */
+
+element.addEventListener('click', function(event) {
+    alert(event);
+});
+
+
+
+
+
+
 
 
 
