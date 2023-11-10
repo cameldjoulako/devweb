@@ -66,7 +66,6 @@ col1.parentNode;
 var menu = document.querySelector('.item')
 menu.setAttribute("class", "active");*/
 
-
 /* 
 var intro = document.querySelector('p');
 
@@ -160,30 +159,28 @@ let enfant2 = document.createElement('span');
 parent.append(enfant1, enfant2, 'Texte ajouté');
  */
 
-
 //-----------------------------
 /*LES EVENEMENTS EN JAVASCRIPT*/
 
-let button = document.querySelector("#myButton");
+/* let button = document.querySelector("#myButton");
 
 button.addEventListener("", function(){
     alert("click sur le boutton !");
-});
-
+}); */
 
 /**
- * 
+ *
  * onchange
  * onsubmit
  * onreset
  * onselect
  * onblur
  * onfocus
- * 
+ *
  * onkeydown
- * onkeypress 
+ * onkeypress
  * onkeyup
- * 
+ *
  * onclick
  * ondbclick
  * onmousedown
@@ -191,9 +188,8 @@ button.addEventListener("", function(){
  * onmouseout
  * onmouseover
  * onmouseup
- * 
+ *
  */
-
 
 /* function validerLeFormulaire() {
     var nom = document.forms["monFormulaire"]["nom"].value;
@@ -204,7 +200,6 @@ button.addEventListener("", function(){
     }
 
 }  */
-
 
 //----------------
 /* l'objet Event */
@@ -228,54 +223,115 @@ person.nom = "camel";
 person.age = 40;
  */
 
-element.addEventListener('click', function(event) {
+/* element.addEventListener('click', function(event) {
     alert(event);
+}); */
+
+//------------------------
+//Les objets en Javascript
+/*var texte = "Bonjour c'est moi;";
+
+document.write(texte.length);*/
+
+//syntaxe
+/*nomDeLobjet.nomDeLPropriété
+nomDeLobjet[nomDeLPropriété]*/
+/*
+var monAuto = new Object();
+
+monAuto.marque = "Renault";
+monAuto["modele"] = "R5";
+
+document.write(monAuto["marque"] + "<br />");
+document.write(monAuto.modele + "<br />");
+*/
+
+/*parcour des propriétés d'un objet
+for(variable in object){
+    //instructions
+}*/
+/*
+let property;
+document.write("Propriétés de l'objet navigator");
+
+for (property in navigator) {
+  document.write(property);
+  document.write("<br />");
+}
+
+document.write("Fin de boucle");
+*/
+
+//une autre methode pour créer les objets
+var vin = {
+  marque: "Saint Estèphe",
+  annee: "2",
+  prix: 14,
+};
+
+//vin = montant;
+
+//Création d'un objet constructeur
+function Vin(marque, annee, prix) {
+  this.marque = marque;
+  this.annee = annee;
+  this.prix = prix;
+  this.quantite = 1;
+  this.montant = function () {
+    return this.quantite * this.prix;
+  };
+}
+
+var vin1 = new Vin("Saint 1", 1698, 80);
+var vin2 = new Vin("Saint 2", 1920, 41);
+var vin3 = new Vin("Saint Estèphe", 1920, 10);
+
+vin1.quantite += 5;
+//document.write(vin1.montant());
+
+/**
+ * 
+ * les objets natif en javascript
+    String et RegExp
+    Number et Math
+    Boolean
+    Array
+ */
+
+//initialisation d'un tableau vide
+var monTableau = new Array();
+var langage = new Array("php", "java", "sql");
+
+var php = langage[0];
+//document.write(langage.length);
+langage[2] = "Js";
+
+var tab1 = new Array("Pomme", "Poires", "Cerise", "Ananas");
+var tab2 = new Array("Banane", "Mangue");
+
+var fruits = tab1.concat(tab2);
+//fruits = ["Pomme", "Poires", "Cerise", "Ananas", "Banane", "Mangue"]
+//document.write(fruits);
+
+fruits.forEach(function (fruit, index) {
+  console.log("Index " + index + ": " + fruit);
 });
 
+//tableau vers string
 
+let chaineString = fruits.join(" ");
+//document.write(chaineString);
 
+/*
+pop()
+push() 
+reverse() 
+shift() : supprime le premier élémént du tableau
+slice()
+sort()
+unshift: insere les elements au debut du tableau
+splice()
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let f1 = fruits.slice(2, 5);
+document.write(f1);
