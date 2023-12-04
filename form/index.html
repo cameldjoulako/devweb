@@ -1,0 +1,102 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire en JavaScript</title>
+
+    <style>
+      nav {
+        padding: 0;
+      }
+
+      nav ul {
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      textarea,
+      input[type="text"] {
+        display: block;
+        width: 200px;
+      }
+
+      label,
+      select {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="accueil.html"> Accueil</a> |</li>
+          <li><a href="apropos.html"> A propos</a> |</li>
+          <li><a href="articles.html"> Articles</a> |</li>
+          <li><a href="contact.html"> Contact</a> |</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main">
+      <div id="new-section">
+        <h1>Nouvel article</h1>
+        <form action="/article/new" method="POST" id="new-article-form" name="">
+          <label for="article">Article</label>
+          <textarea name="article" rows="5"></textarea>
+
+          <label for="signature">Signature</label>
+          <input type="text" name="signature" />
+
+          <label for="work"></label>
+          <select name="work" id="">
+            <option value="professeur">Professeur</option>
+            <option value="etudiant">Etudiant</option>
+            <option value="administrateur">Admin</option>
+            <option value="autre">Autres</option>
+          </select>
+
+          <label>Categorie</label>
+          <input type="checkbox" name="js" id="" />Javascript <br />
+          <input type="checkbox" name="css" id="" />css <br />
+          <input type="checkbox" name="c" id="" />C <br />
+
+          <label>Etat</label>
+          <input type="radio" name="etat" value="public" id="" /> Public
+          <input type="radio" name="etat" value="privee" id="" /> Privée <br />
+
+          <input type="submit" name="Envoyer" />
+        </form>
+      </div>
+    </div>
+
+    <section>
+      <h1>Ceci est un article</h1>
+      <p>ceci est un paragraphe</p>
+
+      <p class="important">Ceci est un paragraphe important</p>
+    </section>
+    <section>
+      <h1>Ceci est un article</h1>
+      <p>ceci est un paragraphe</p>
+
+      <p class="important">Ceci est un paragraphe important</p>
+    </section>
+    <section>
+      <h1>Ceci est un article</h1>
+      <p>ceci est un paragraphe</p>
+
+      <p class="important">Ceci est un paragraphe important</p>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

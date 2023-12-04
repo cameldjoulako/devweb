@@ -263,6 +263,7 @@ document.write("Fin de boucle");
 */
 
 //une autre methode pour créer les objets
+/*
 var vin = {
   marque: "Saint Estèphe",
   annee: "2",
@@ -298,14 +299,14 @@ vin1.quantite += 5;
     Array
  */
 
-//initialisation d'un tableau vide
+/* //initialisation d'un tableau vide
 var monTableau = new Array();
 var langage = new Array("php", "java", "sql");
 
 var php = langage[0];
 //document.write(langage.length);
-langage[2] = "Js";
-
+langage[2] = "Js"; */
+/* 
 var tab1 = new Array("Pomme", "Poires", "Cerise", "Ananas");
 var tab2 = new Array("Banane", "Mangue");
 
@@ -320,7 +321,7 @@ fruits.forEach(function (fruit, index) {
 //tableau vers string
 
 let chaineString = fruits.join(" ");
-//document.write(chaineString);
+//document.write(chaineString); */
 
 /*
 pop()
@@ -331,7 +332,183 @@ slice()
 sort()
 unshift: insere les elements au debut du tableau
 splice()
+split()
+substr()
+touppercase()
+tolowercase()
+
 */
 
-let f1 = fruits.slice(2, 5);
+/* let f1 = fruits.slice(2, 5);
 document.write(f1);
+ */
+
+//Objet date
+
+// 1er janvier 1970 00:00:00 =
+// 1jour = 86 400 000 millisecondes
+/* 
+let maintenant = new Date();
+let d1 = new Date("Decembre 25, 2023 09:15:15"); */
+
+//console.log(maintenant.getDate());
+//console.log(d1);
+
+/* maintenant.setDate(maintenant.getDate() + 10);
+
+//console.log(maintenant);
+
+let date = new Date();
+
+date.getDay(); // le jour du mois
+
+console.log(date.getFullYear());
+console.log(date.getHours());
+console.log(date.getMilliseconds());
+console.log(date.getMinutes());
+console.log(date.getMonth()); */
+
+//-----------onjet MATH
+
+/* let num = 9.8;
+
+//document.write(Math.round(num));
+//Math.ceil(x);
+//Math.floor(x);
+
+Math.max(2, 9);
+Math.min(8, 10);
+document.write(Math.floor(num));
+
+Math.random();
+ */
+
+//--------REVISION DOM
+let p = document.getElementsByTagName("p");
+/* document.write(p);
+
+console.log(p); */
+
+/* let classp = document.getElementsByClassName("text");
+//document.write(classp);
+
+let hero = document.getElementById("hero");
+//document.write(hero);
+//console.log(hero);
+
+let elements = document.querySelectorAll(".menu");
+
+let first = document.querySelector(p.title);
+
+let enfant = document.getElementById("liste").getElementsByClassName("li");
+document.write(enfant);
+
+console.log(enfant); */
+
+//Selection de tous élements span descendant de l'élement avec l'id monContenu
+/* let spans = document.getElementById("monConteneur").getElementB("span");
+
+let spans = document
+  .getElementById("monConteneur")
+  .getElementsByTagName("span"); */
+
+/* let spans = document.querySelectorAll("#monConteneur span");
+
+for (let i = 0; i < spans.length; i++) {
+  console.log(spans[i]);
+} */
+
+//Selectionner tous les élements avec l'attribut data-role
+/* let dataRoleElmts = document.querySelectorAll("[data-role]");
+
+dataRoleElmts.forEach(function (element) {
+  console.log(element);
+});
+ */
+
+//selectioner tous les élements du menu actif
+/* let activeMenuItems = document.querySelectorAll('[status="active"]');
+activeMenuItems.forEach(function (element) {
+  console.log(element);
+}); */
+
+//selectioner tous les élements du menu actif
+/* let activeMenuItems = document.querySelectorAll('[status="inactive"]');
+activeMenuItems.forEach(function (element) {
+  console.log(element);
+});
+ */
+
+// selection d'un element parent
+//let parentElement = document.getElementById("monElement").parentNode;
+
+//parentElement.classList.add("parent-e");
+//parentElement.classList.remove("parent-e");
+//parentElement.classList.toggle("parent-e");
+//parentElement.classList.replace("parent", "parent-e");
+
+//selectioner tous élements <p> qui suivent imédiatement un élement <h2>
+/* let paragraph = document.querySelectorAll("h2 + p");
+
+paragraph.forEach(function (paragraph) {
+  paragraph.classList.add("selected");
+  console.log(paragraph);
+}); */
+
+/*pseudo classe : 
+:nth-child(an+b)
+
+*/
+/* let secondViv = document
+  .getElementById("maSection")
+  .querySelector(":nth-child(2)"); */
+
+//console.log(secondViv);
+
+//secondViv.classList.add("selected");
+/*
+//revision modification élement
+
+
+
+document.write(element);
+element.appendChild(noeud);
+element.remove(noeud);
+element.replaceChild(noeud);
+element.insertBefore(noeud);
+let para = document.createElement("p");
+let title = document.createTextNode("Le javascript");
+
+let att = para.getAttribute();
+console.log(att);
+*/
+
+/*let e2 = document.getElementById("e2");
+
+let att = e2.getAttribute("class");
+
+document.write(att);
+
+e2.setAttribute("class", "parent-e");
+
+let att2 = e2.getAttribute("class");
+
+document.write(att2);
+
+*/
+
+/* let texteE = secondViv.innerHTML;
+
+document.write(texteE); */
+
+//secondViv.innerHTML = "";
+
+let enfants = document.getElementById("maSection");
+/* 
+document.write(enfants);
+console.log(enfants);
+let childN = enfants.chilNodes;
+console.log(childN); */
+
+element.attributes;
+element.style.property;

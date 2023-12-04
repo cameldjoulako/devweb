@@ -22,3 +22,16 @@
 .border {
   border: 2px dashed black;
 }
+
+.parent-e {
+  background-color: skyblue;
+}
+
+h2,
+p {
+  margin: 5px 0;
+}
+
+.selected {
+  color: red;
+}
