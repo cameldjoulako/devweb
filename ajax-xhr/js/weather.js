@@ -43,9 +43,11 @@ function handleResponse() {
   if (xhr.readyState === 4) {
     if (xhr.status === 200) {
       //la requette a été un sucess
+      console.log(xhr.responseText);
       createSuccessHtml(JSON.parse(xhr.responseText));
     } else {
       //la requette a échoué
+
       createErrorHtml(JSON.parse(xhr.responseText));
     }
   }
@@ -66,7 +68,6 @@ function createSuccessHtml(data) {
               <p>
               Temperature: ${data.main.temp.toFixed(1)} °C
               </p>
-
              `;
 
   updateUI(html);
@@ -77,11 +78,11 @@ let createErrorHtml = (data) => {
               <h1>Une erreur s'est produite</h1>
               <p>${data.message}</p>
             `;
+  updateUI(html);
 };
 
-let buildUrl = (city) => {
+let buildUrl = (city) =>
   `${baseUrl}&q=${encodeURIComponent(city)}&appid=${key}`;
-};
 
 let updateUI = (html) => {
   //vider le champ reponse
