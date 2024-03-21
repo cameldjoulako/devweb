@@ -44,6 +44,7 @@ form.addEventListener("click", function (event) {
 
           if (!form.signature.value.trim()) {
             alert(" la signature ne peut être vide");
+            form.signature.focus();
             event.preventDefault();
             return;
           }
@@ -82,6 +83,8 @@ form.addEventListener("click", function (event) {
             event.preventDefault();
             return;
           }
+
+          //form.submit();
         });
       });
     },
