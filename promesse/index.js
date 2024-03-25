@@ -26,7 +26,7 @@ console.log(promise); */
 
 //executeur qui rompe la promesse
 
-/* let promise = new Promise(function (resolve, reject) {
+/* let promise = new Promise(function (resolve, rejec+t) {
 
     //traitement ok
 
@@ -67,13 +67,39 @@ console.log(promise); */
 }); */
 
 //cas du reject
-let promise = new Promise(function (resolve, reject) {
+/* let promise = new Promise(function (resolve, reject) {
   setTimeout(() => reject(new Error("une erreur e'est produite")), 1000);
-});
+}); */
 
-promise.then(
+/* promise.then(
   (result) => alert(result),
   (error) => alert(error)
-);
+); */
 
 //promise.then(null, fonctionGerantErreur)
+
+/* promise.catch(alert);
+
+//FINALLY
+promise.finally() */
+/* 
+new Promise(function (resolve, reject) {
+  //setTimeout(() => reject(new Error("une erreur e'est produite")), 1000);
+}).finally(() => "fin du chargement")
+.then(result => "result ok") */
+
+/* new Promise(function (resolve, reject) {
+  setTimeout(() => resolve("value"), 2000);
+})
+  .finally(() => alert("La promesse est prete"))
+  .then((result) => alert(result));
+ */
+
+/* let promise = new Promise((resolve, reject) => {
+  throw new Error("Erreur");
+});
+
+promise
+  .finally(() => alert("la promesse est prête"))
+  .catch((err) => alert(err));
+ */
