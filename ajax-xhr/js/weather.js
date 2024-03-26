@@ -25,21 +25,44 @@ function handleClick(e) {
   updateUI(img);
 
   //lancement de la requette
-  makeRequest(city); //pb
+  //console.log(makeRequest(city));
+
+  makeRequest(city)
+    .then((data) => createSuccessHtml(data))
+    .catch((error) => createErrorHtml(error));
 }
 
 //methode de lancement de la requete
 function makeRequest(city) {
-  xhr = new XMLHttpRequest();
+  return new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
 
-  xhr.open("GET", buildUrl(city));
+    xhr.open("GET", buildUrl(city));
 
-  xhr.onreadystatechange = handleResponse;
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          //success
+          //resolve(JSON.parse(xhr.responseText));
+          resolve(JSON.parse(xhr.responseText));
+        } else {
+          //erreur
+          reject(JSON.parse(xhr.responseText));
+        }
+      }
+    };
 
-  xhr.send();
+    xhr.send();
+  });
 }
 
-function handleResponse() {
+//id
+//username
+
+//research
+
+//utilisation sans les promesse
+/* function handleResponse() {
   if (xhr.readyState === 4) {
     if (xhr.status === 200) {
       //la requette a été un sucess
@@ -51,7 +74,7 @@ function handleResponse() {
       createErrorHtml(JSON.parse(xhr.responseText));
     }
   }
-}
+} */
 
 function createSuccessHtml(data) {
   let weather = data.weather[0];

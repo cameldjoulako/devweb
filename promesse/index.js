@@ -103,3 +103,48 @@ promise
   .finally(() => alert("la promesse est prête"))
   .catch((err) => alert(err));
  */
+
+//CHAINAGE DES PROMESSE
+/* new Promise(function (resolve, reject) {
+  setTimeout(() => resolve(1), 1000);
+})
+  .then(function (result) {
+    alert(result); //1
+    return result * 2;
+  })
+  .then(function (result) {
+    alert(result); //2
+    return result * 2;
+  })
+  .then(function (result) {
+    alert(result); //4
+    return result * 2;
+  }); */
+
+//1 2 4*
+
+function loadScript(src) {
+  return new Promise(function (resolve, reject) {
+    let script = document.createElement("script");
+    script.src = src;
+
+    script.onload = () => resolve(script);
+
+    script.onerror = () =>
+      reject(new Error(`Erreur de chargement du fichier: ${src}`));
+
+    document.head.append(script);
+  });
+}
+
+loadScript("one.js")
+  .then((script) => loadScript("two.js"))
+  .then((script) => loadScript("three.js"))
+  .then((script) => {
+    //tous mes scripts sont chargées
+
+    console.log(script);
+    one();
+    two();
+    three();
+  });
