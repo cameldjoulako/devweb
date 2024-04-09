@@ -1,2 +1,2 @@
 # devweb
-## Full Stack web development courses by Homedeve Academy
+## Full Stack web development courses by Acadig.com
