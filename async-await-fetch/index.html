@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async et Await - Fetch</title>
+  </head>
+  <body>
+    <script>
+      /*async function makeRequest() {
+        return 1;
+      } */
+      /*
+      async function makeRequest() {
+        return Promise.resolve(1);
+      }
+
+      console.log(makeRequest());
+
+      //await
+
+      let value = await promise;
+*/
+      async function make() {
+        let promise = new Promise((resolve, reject) => {
+          setTimeout(() => resolve("Done!"), 1000);
+        });
+
+        let result = await promise;
+
+        console.log(result);
+
+        alert(result);
+      }
+
+      make();
+    </script>
+  </body>
+</html>
