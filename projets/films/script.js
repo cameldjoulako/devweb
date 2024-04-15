@@ -1,10 +1,10 @@
 const API_URL =
-  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&language=fr-FR&page=1&api_key=07ddc8b397fa196c169df263d25a0d82";
+  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&language=en-EN&page=1&api_key=07ddc8b397fa196c169df263d25a0d82";
 
 const SEARCH_URL =
   "https://api.themoviedb.org/3/search/movie?language=fr-FR&api_key=07ddc8b397fa196c169df263d25a0d82&query=";
 
-const IMG_PATH = "https://image.tmdb.org/t/p/w500/";
+const IMG_PATH = "https://image.tmdb.org/t/p/w500";
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
@@ -21,25 +21,49 @@ async function getMovies(url) {
   const res = await fetch(url);
 
   const data = await res.json();
+
+  console.log(data);
+
+  //afficher les différents fims
+  showMovies(data.results);
 }
 
-fetch(url, {
-  method: POST,
-  headers: {
-    "content-Type": "application/json, ", //multipart-form-data, text/plain, application/xml
-  },
+function showMovies(movies) {
+  main.innerHTML = "";
+
+  movies.forEach((movie) => {
+    const { title, poster_path, vote_average, overview } = movie;
+
+    const movieEl = document.createElement("div");
+
+    movieEl.classList.add("movie");
+
+    movieEl.innerHTML = `
+    <img src="${IMG_PATH + poster_path}" alt="${title}">
+    <div class="movie-info">
+      <h3>${title}</h3>
+      <span>${vote_average}</span>
+    </div>
+    <div class="overview">
+      <h3>Overview</h3>
+      ${overview}
+    </div>
+    `;
+
+    main.appendChild(movieEl);
+  });
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const searchTerm = search.value;
+
+  if (searchTerm && searchTerm !== "") {
+    getMovies(SEARCH_URL + searchTerm);
+
+    search.value = "";
+  } else {
+    window.location.reload();
+  }
 });
-
-//utilisation du jeton pour authentifier
-const options = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwN2RkYzhiMzk3ZmExOTZjMTY5ZGYyNjNkMjVhMGQ4MiIsInN1YiI6IjY2MTAxMjhlZjI4ODM4MDE3ZTBmYjE5MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EF6zxfMetjXcKLLbT70c1iTwcuWPoM36qTrO_vI0Bs4",
-  },
-};
-
-const api_url2 =
-  "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc";
-fetch(url, options);
